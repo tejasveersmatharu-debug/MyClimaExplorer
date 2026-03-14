@@ -1,3 +1,5 @@
+Technologies required to run the webapp
+
 flask
 flask-cors
 xarray
