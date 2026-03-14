@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    min-width: 100%;
+    padding: 10px;
+    background-color: #08216C;
+}
+.header h1, .header p {
+    text-align: center;
+    color: #D3E1E9;
+}
+.header h1{
+    font-size: 50px;
+    padding-top: 0.8rem;
+}
+.header p{
+    font-size: 20px;
+    padding-top: 0.4rem;
+    padding-bottom: 0.8rem;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+}
+
+.sidebar {
+    width: 400px;
+    padding: 20px;
+    background-color: #0A369D;
+
+    
+}
+.side-box {
+    padding: 25px;
+    height: 100%;
+    margin: 20px;
+    border: 0px, solid, black;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #81A2E3;
+}
+
+.sidebar_header {
+    padding: 10px;
+}
+.sidebar_header h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-bottom: 5px;
+}
+
+
+
+.instruct p {
+    font-size : 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.instruct :hover {
+    border: 0px black solid;
+    border-radius: 5px;
+    background-color: #A2C0EE;
+}
+
+.btn {
+    padding: 10px;
+}
+
+.sidebar_body {
+    background-color: #B3CBEF;
+    padding: 10px;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar button {
+    padding: 10px;
+    width: 130px;
+    background-color: #393F4D;
+    border: 0px solid black;
+    border-radius: 7px;
+    font-size: 14px;
+    color: #D3E1E9;
+}
+button:hover {
+    background-color: #5C616D;
+}
+button:active {
+    background-color: #686E7B;;
+}
+
+/* main window */
+
+.visual {
+    width: 100%;
+    background-color: #0A369D;
+    padding-top: 20px;
+}
+.visual_box {
+    margin-top: 20px;
+    margin-right: 40px;
+    height: 100%;
+    border: 0px, solid, black;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #81A2E3;
+}
+.upload {
+    min-width: 400px;
+    border: 0px, solid, black;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    background-color: #B3CBEF;
+    padding: 50px;  
+}
+.upload_file {
+    padding: 40px;
+    border: 0px, solid, black;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: rgb(153, 168, 228);
+}
+
+#upload-btn  {
+    background-color: #08216C;
+}
+
+.upload-label {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #393F4D;
+    color: #D3E1E9;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.upload-label:hover {
+    background-color: #5C616D;
+}
