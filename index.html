@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyClima</title>
+</head>
+<body>
+    <div class="header">
+        <h1>MyClimaExplorer</h1>
+        <p>The Ultimate Climate Explorer!</p>
+    </div>
+    <div class="main">
+        <div class="sidebar">
+            <div class="side-box">
+                <div class="sidebar_header">
+                <h2>Sidebar</h2>
+                <div class="instruct">
+                    <p>Instructions:</p>
+                    <h5>This website is designed for files with only One Variable, which will be shown below.</h5>
+                    <h5>The tabular Yearly data can also be accessed if provided*</h5>
+                    <h5>if Data of multiple variables is provided, then it cannot be accessed.</h5>
+                    <h5>It you want to compare two years of your yearly data or tabulate the data, your data must support the yearly data format.</h5>
+
+                </div>
+                </div>
+                <div class="sidebar_body">
+                    <div class="temperature btn">
+                        <button id="temp_btn">Temperature</button>
+                    </div>
+                    <div class="precipitation btn">
+                        <button id="rain_btn">Precipitation</button>
+                    </div>
+                    <div class="humidity btn">
+                        <button id="humidity">Humidity</button>
+                    </div>
+                    <div class="wind btn">
+                        <button id="wind_btn">Wind</button>
+                    </div>
+                    <div class="data-show btn">
+                        <button id="data_show">Show Data</button>
+                    </div>
+                    <div class="btn">
+                        <button id="compare_btn" disabled>Compare Years</button>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- graphs and heatmap -->
+        <div class="visual">
+
+            <div class="visual_box">
+                <div class="upload">
+                    <div class="upload_file">
+                    <label for="upload-btn" class="upload-label">Select .nc File</label>
+                    <input type="file" id="upload-btn" accept=".nc" style="display:none;">
+                </div>
+                </div>
+                <div class="total">
+                    <div class="total_heatmap">
+                        <div id="heatmap" class="total_heatmap_box"></div>
+                    </div>
+                    <div class="total_graph">
+                        <div id="graph"></div>
+                    </div>
+                </div>
+                <div class="globe_section">
+                    <div id="globe"></div>
+                </div>
+                <!-- data show -->
+                <div class="data_box">
+                    <div id="data_table_container"></div>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class="footer">
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
