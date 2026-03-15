@@ -1,5 +1,5 @@
 # MyClimaExplorer
-Hi!
+Hi! PLEASE FIND THE VIDEO IN THE FILES SECTION!
 </br>
 This is MyClimaExplorer, a project made by Four First-year students of IIT-BHU in Hackathon-Hack it Out.
 </br>
